@@ -9,7 +9,7 @@ public:
         return true;
     }
     int dfs(int i,int j,vector<vector<int>>& grid,vector<vector<bool>>& vis){
-        if(!isValid(i,j,grid,vis)) return area;
+        if(!isValid(i,j,grid,vis)) return 0;
         
         vis[i][j]=1;  // OR set grid[i][j]=0;
         int area=1;
